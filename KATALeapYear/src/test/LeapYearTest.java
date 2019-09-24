@@ -17,9 +17,15 @@ public class LeapYearTest {
 	}
 
 	@Test
-	public void testDivisibilityBy4()
+	public void testDivisibilityBy4IsLeap()
 	{
 		assertTrue(isLeap(16));
+	}
+
+	@Test
+	public void testDivisibilityBy100IsNotLeap()
+	{
+		assertFalse(isLeap(200));
 	}
 
 	private boolean isLeap(int year)
