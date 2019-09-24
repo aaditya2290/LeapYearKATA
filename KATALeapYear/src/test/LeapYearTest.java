@@ -28,6 +28,12 @@ public class LeapYearTest {
 		assertFalse(isLeap(200));
 	}
 
+	@Test
+	public void testDivisibilityBy100and400IsLeap()
+	{
+		assertTrue(isLeap(4000));
+	}
+
 	private boolean isLeap(int year)
 	{
 		return ly.isLeapYear(year);
